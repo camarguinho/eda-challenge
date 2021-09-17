@@ -18,7 +18,7 @@ Apache Kafka on OpenShift in a few minutes 💪.
 [Apache Kafka](https://kafka.apache.org) is an open-sourced distributed event streaming platform
 for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 
-[Red Hat AMQ-Streams](https://access.redhat.com/products/red-hat-amq#streams-gs) (based in the upstream project [Strimzi](https://strimzi.io/))
+[Red Hat AMQ-Streams](https://access.redhat.com/products/red-hat-amq#streams-gs), based in the upstream project [Strimzi](https://strimzi.io/),
 provides a way to run an Apache Kafka cluster on OpenShift in various deployment configurations.
 
 This powerful operator is available (already deployed and ready) in your OpenShift cluster. Use it! 😉
@@ -31,7 +31,7 @@ These references are very useful for you:
 
 Service Registry on OpenShift in a few minutes 💪.
 
-[Red Hat Service Registry](https://access.redhat.com/documentation/en-us/red_hat_integration/2020-q4/html/getting_started_with_service_registry/intro-to-the-registry) (based in upstream project [Apicurio Registry](https://www.apicur.io/registry/) is a datastore for sharing
+[Red Hat Service Registry](https://access.redhat.com/documentation/en-us/red_hat_integration/2020-q4/html/getting_started_with_service_registry/intro-to-the-registry), based in upstream project [Apicurio Registry](https://www.apicur.io/registry/), is a datastore for sharing
 standard event schemas and API designs across API and Event-Driven Architectures. You can use Service Registry to decouple
 the structure of your data from your client applications, and to share and manage your data types
 and API descriptions at runtime using a REST interface.
