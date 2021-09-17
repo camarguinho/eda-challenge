@@ -18,22 +18,21 @@ Apache Kafka on OpenShift in a few minutes 💪.
 [Apache Kafka](https://kafka.apache.org) is an open-sourced distributed event streaming platform
 for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 
-[Strimzi](https://strimzi.io/ provides a way to run an Apache Kafka cluster on OpenShift in
-various deployment configurations.
+[Red Hat AMQ-Streams](https://access.redhat.com/products/red-hat-amq#streams-gs) (based in the upstream project [Strimzi](https://strimzi.io/))
+provides a way to run an Apache Kafka cluster on OpenShift in various deployment configurations.
 
 This powerful operator is available (already deployed and ready) in your OpenShift cluster. Use it! 😉
 
 These references are very useful for you:
 
-* [Strimzi QuickStarts](https://strimzi.io/quickstarts/)
-* [Using Strimzi](https://strimzi.io/docs/operators/latest/using.html)
+* [Using Red Hat AMQ Streams on OpenShift](https://access.redhat.com/documentation/en-us/red_hat_amq/2021.q3/html/using_amq_streams_on_openshift/index)
 
 ## Service Registry ➕ OpenShift = Apicurio Operators
 
 Service Registry on OpenShift in a few minutes 💪.
 
-[Service Registry](https://www.apicur.io/registry/) is a datastore for sharing standard event schemas
-and API designs across API and Event-Driven Architectures. You can use Service Registry to decouple
+[Red Hat Service Registry](https://access.redhat.com/documentation/en-us/red_hat_integration/2020-q4/html/getting_started_with_service_registry/intro-to-the-registry) (based in upstream project [Apicurio Registry](https://www.apicur.io/registry/) is a datastore for sharing
+standard event schemas and API designs across API and Event-Driven Architectures. You can use Service Registry to decouple
 the structure of your data from your client applications, and to share and manage your data types
 and API descriptions at runtime using a REST interface.
 
@@ -41,7 +40,7 @@ This powerful operator is available (already deployed and ready) in your OpenShi
 
 These references are very useful for you:
 
-* [Apicurio Registry Documentation](https://www.apicur.io/registry/docs/apicurio-registry/2.0.1.Final/index.html)
+* [Service Registry User Guide](https://access.redhat.com/documentation/en-us/red_hat_integration/2021.q3/html/service_registry_user_guide/index)
 
 ## Quarkus Application
 
