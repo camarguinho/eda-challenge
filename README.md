@@ -4,7 +4,7 @@
 
 The main goal will be for you to deploy 🚀 the foundational components of an Event-Driven Architecture on
 top of Red Hat OpenShift Container Platform. The foundational components of
-this Event-Driven Architecure should be:
+this Event-Driven Architecture should be:
 
 - An Apache Kafka cluster with some topics to publish and consume messages.
 - A Quarkus application to publish and consume messages from topics of Apache Kafka cluster
@@ -21,7 +21,7 @@ for high-performance data pipelines, streaming analytics, data integration, and 
 [Strimzi](https://strimzi.io/ provides a way to run an Apache Kafka cluster on OpenShift in
 various deployment configurations.
 
-This powerfull operator is available (already deployed and ready) in your OpenShift cluster. Use it! 😉
+This powerful operator is available (already deployed and ready) in your OpenShift cluster. Use it! 😉
 
 These references are very useful for you:
 
@@ -37,7 +37,7 @@ and API designs across API and Event-Driven Architectures. You can use Service R
 the structure of your data from your client applications, and to share and manage your data types
 and API descriptions at runtime using a REST interface.
 
-This powerfull operator is available (already deployed and ready) in your OpenShift cluster. Use it! 😉
+This powerful operator is available (already deployed and ready) in your OpenShift cluster. Use it! 😉
 
 These references are very useful for you:
 
@@ -45,7 +45,7 @@ These references are very useful for you:
 
 ## Quarkus Application
 
-The main goal here is create a Quarkus application to expose a simple REST API to publish messages into a
+The main goal here is to create a Quarkus application to expose a simple REST API to publish messages into a
 Kafka topic, and consume them to be processed. If you have never used Quarkus before, remember that you
 can attend the Quarkus workshop before the Games. The only requirement is Java basic development knowledge.
 
@@ -93,7 +93,7 @@ this endpoint (using POST verb): `/topic`, `/publish`
 - An endpoint returning all the messages stored from the topic. Suggested path to access
 this endpoint (using GET verb): `/topic`, `/consume`
 
-You can of course add others endpoints if you want.
+You can of course add other endpoints if you want.
 
 You are encouraged to use [reactive messaging extension](https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/3.9/index.html)
 to manage the publish and subscribe workflows.
@@ -156,7 +156,7 @@ and [here](https://quarkus.io/guides/apicurio-registry-dev-services).
 For prod mode you should have deployed the Apache Kafka and Service Registry services in your
 OpenShift cluster. You will need to configure the Quarkus Application to connect such services.
 
-Now you should be ready to run the boostraped application. The dev mode is an awesome mode that
+Now you should be ready to run the bootstrapped application. The dev mode is an awesome mode that
 Quarkus has that allows you to write code and get the result of your changes without having to
 restart the application at all.
 
@@ -185,7 +185,7 @@ that will help you with some basic commands.
 ### Containerization and deployment in OpenShift
 
 Next part of the challenge, once the Quarkus Application is coded and is accepting requests
-locally, you should package it and deploy it to the provided the OpenShift Cluster. For that, we
+locally, you should package it and deploy it to the provided OpenShift Cluster. For that, we
 recommend using the [Quarkus OpenShift extension](https://quarkus.io/guides/deploying-to-openshift). This
 extension offers the ability to generate OpenShift resources. Once the resources have been
 generated, you can deploy them by running the command `oc apply -f path_to_file`.
