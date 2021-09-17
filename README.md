@@ -11,7 +11,7 @@ this Event-Driven Architecture should be:
 - An Service Registry to publish the Data schema formats or API of the messages of our solution
 - OpenShift Operators to operate some of the components of our platform: Apache Kafka and Service Registry
 
-## Apache Kafka ➕ OpenShift = Strimzi Operators
+## Apache Kafka ➕ OpenShift = Red Hat AMQ Streams Operators
 
 Apache Kafka on OpenShift in a few minutes 💪.
 
@@ -27,7 +27,7 @@ These references are very useful for you:
 
 * [Using Red Hat AMQ Streams on OpenShift](https://access.redhat.com/documentation/en-us/red_hat_amq/2021.q3/html/using_amq_streams_on_openshift/index)
 
-## Service Registry ➕ OpenShift = Apicurio Operators
+## Service Registry ➕ OpenShift = Red Hat Service Registry Operators
 
 Service Registry on OpenShift in a few minutes 💪.
 
