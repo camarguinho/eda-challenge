@@ -11,6 +11,9 @@ this Event-Driven Architecture should be:
 - An Service Registry to publish the Data schema formats or API of the messages of our solution
 - OpenShift Operators to operate some of the components of our platform: Apache Kafka and Service Registry
 
+**Note**: We recommended you to create a namespace called `eda-challenge` to deploy all these components in
+your OpenShift environment.
+
 ## Apache Kafka ➕ OpenShift = Red Hat AMQ Streams Operators
 
 Apache Kafka on OpenShift in a few minutes 💪.
@@ -21,7 +24,7 @@ for high-performance data pipelines, streaming analytics, data integration, and 
 [Red Hat AMQ-Streams](https://access.redhat.com/products/red-hat-amq#streams-gs), based in the upstream project [Strimzi](https://strimzi.io/),
 provides a way to run an Apache Kafka cluster on OpenShift in various deployment configurations.
 
-This powerful operator is available (already deployed and ready) in your OpenShift cluster. Use it! 😉
+**NOTE**: This powerful operator is available (already deployed and ready) in your OpenShift cluster. Use it! 😉
 
 These references are very useful for you:
 
@@ -36,11 +39,13 @@ standard event schemas and API designs across API and Event-Driven Architectures
 the structure of your data from your client applications, and to share and manage your data types
 and API descriptions at runtime using a REST interface.
 
-This powerful operator is available (already deployed and ready) in your OpenShift cluster. Use it! 😉
+**NOTE**: This powerful operator is available (already deployed and ready) in your OpenShift cluster. Use it! 😉
 
 These references are very useful for you:
 
 * [Service Registry User Guide](https://access.redhat.com/documentation/en-us/red_hat_integration/2021.q3/html/service_registry_user_guide/index)
+
+create an eda-challenge namespace to deploy all your staff
 
 ## Quarkus Application
 
@@ -58,7 +63,7 @@ package com.santander.games.challenges.eda;
 
 import java.io.Serializable;
 
-public class Message implements Serializable {
+public class MyMessage implements Serializable {
 
     // Key to identify this message
     private String key;
@@ -111,7 +116,7 @@ We propose the following AVRO schema:
 
 ```json
 {
-  "name": "Message",
+  "name": "MyMessage",
   "namespace": "com.santander.games.challenges.eda",
   "type": "record",
   "doc": "Schema for a Message.",
@@ -191,6 +196,8 @@ generated, you can deploy them by running the command `oc apply -f path_to_file`
 
 If you are not familiar with the OpenShift client, the `oc` command, pass the `quarkus.kubernetes.deploy`
 flag in the command line to build and deploy the application in a single step.
+
+Tip: `quarkus.kubernetes-client.trust-certs` property will resolve any SSL issues publishing your application.
 
 **Bonus (Optional)**: Quarkus is the unique Kubernetes Native Java stack for containers! Really? Demostraste
 it by building your application as a native application and deploy in the OpenShift cluster.
