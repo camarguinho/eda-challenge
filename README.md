@@ -47,6 +47,16 @@ These references are very useful for you:
 
 create an eda-challenge namespace to deploy all your staff
 
+## Prerequisites
+
+To complete this challenge, you need:
+
+- an IDE (your prefer one), you have a Code Ready Workspace available if you want.
+- JDK 11+ installed with JAVA_HOME configured appropriately
+- Apache Maven 3.8.1+
+- (Optional) OpenShift CLI (`oc` command) could be usefull.
+- (Optional) Container runtime (docker or podman) to run locally containers.
+
 ## Quarkus Application
 
 The main goal here is to create a Quarkus application to expose a simple REST API to publish messages into a
