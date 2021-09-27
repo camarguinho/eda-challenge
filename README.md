@@ -217,3 +217,10 @@ Check the questions:
 - How much memory does your application need to run?
 
 Check how to do it [here](https://quarkus.io/guides/building-native-image)
+
+## Need help?
+
+Remember that we are all here to answer any questions and support you during all the Developer Games:
+
+DevelopergamesEMEA@redhat.com
+
